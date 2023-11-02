@@ -1,13 +1,12 @@
-SHOW DATABASES;
+DROP DATABASE IF EXISTS turnos_db;
 
 CREATE DATABASE turnos_db;
 
+
 USE turnos_db;
 
-SHOW TABLES;
 
-
-CREATE TABLE usuario(
+CREATE TABLE IF NOT EXISTS usuario(
     id_usuario INT NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
